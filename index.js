@@ -30,3 +30,8 @@ function calculateWindChill() {
     // Display the result
     document.getElementById('result').innerText = `Wind Chill Temperature: ${windChill.toFixed(2)} °F`;
 }
+
+function resetForm() {
+    document.getElementById('result').innerText = "";
+    document.getElementById('myForm').reset();
+}
