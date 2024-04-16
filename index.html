@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Chill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="myForm">
+        <label>Wind speed units</label>
+        <select id="wind-utils">
+            <option value="kph">kilometer per hour (kph)</option>
+            <option value="mph">miles per hour (mph)</option>
+            <option value="mps">meters per second (m/s)</option>
+            <option value="kts">konts (kts)</option>
+            <option value="fts">feet per secont (ft/s)</option>
+        </select><br>
+
+        <label>Wind speed</label>
+        <input id="wind-speed" type="number" value="27"></input><br>
+
+        <label>Temperature units</label>
+        <select id="temperature-units">
+            <option value="F">Fahrenheit (F)</option>
+            <option value="C">Celsius (C)</option>
+            <option value="K">Kelvin (K)</option>
+        </select><br>
+
+        <label>Air Temperature</label>
+        <input id="air-temperature" type="number" value="0"></input><br>
+
+        <button type="button" onclick="calculateWindChill()">Confirm</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
